@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://static.wixstatic.com/media/df1b6c_349b00ef41e5492b812dcc7cf3606a2f~mv2.jpg/v1/fill/w_1107,h_738,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/C%C3%B3pia%20de%20Anne%20II%20by%20Nina%20Buffferli%20Barbosa_-47.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-image: url(https://static.wixstatic.com/media/df1b6c_349b00ef41e5492b812dcc7cf3606a2f~mv2.jpg/v1/fill/w_1107,h_738,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/C%C3%B3pia%20de%20Anne%20II%20by%20Nina%20Buffferli%20Barbosa_-47.jpg);
+    background-size:cover;
+
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(6, 32, 2, 0.74);
+    border-radius: 5rem;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 40px;
+    border-radius: 99px;
+    
+}
+.titulo{
+
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 5px 20px #000000;
+}
+
+.foto {
+    
+    width: 400px;
+    height: 250px;
+    margin: 20px 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.foto img {
+    filter: brightness(55%);
+    box-shadow:  22px 22px 44px #000e03;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: filter 0.3s ease;
+}
+
+.foto:hover img {
+    filter: brightness(100%);
+}
+.nome {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+
+.foto .info {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.516);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease;
+}
+
+.foto:hover .info {
+    bottom: 0;
+    display: block;
+}
+.foto:hover .nome{
+    display: none;
+}
