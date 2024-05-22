@@ -83,7 +83,6 @@ html::-webkit-scrollbar-thumb{
     transition: opacity 1s ease;
 }
 
-
 .foto .info {
     display: none;
     position: absolute;
