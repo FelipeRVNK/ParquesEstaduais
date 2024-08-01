@@ -26,6 +26,18 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
+[data-animate]{
+    opacity: 0;
+    transform: translate3d(0, -70px, 0);
+    transition: opacity 1s, transform 1s;
+}
+
+
+[data-animate].anime{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
 
 .container {
     display: flex;
